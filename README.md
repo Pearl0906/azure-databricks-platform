@@ -80,6 +80,8 @@ The main objective is to demonstrate a modern cloud data engineering platform wh
     Raw Data                    Unity Catalog
                                 External Location
 
+---
+
 ## Bronze
 
 The Bronze layer contains raw or minimally processed data.
