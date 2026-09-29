@@ -1,0 +1,25 @@
+bundle:
+  name: azure-databricks-platform
+
+include:
+  - resources/*.yml
+
+sync:
+  include:
+    - notebooks/**
+    
+
+targets:
+  dev:
+    mode: development
+    default: true
+
+    workspace:
+      host: https://adb-7405607009097015.15.azuredatabricks.net
+      root_path: /Workspace/Users/${workspace.current_user.userName}/.bundle/${bundle.name}/${bundle.target}
+
+    presets:
+      name_prefix: "[${workspace.current_user.short_name}] "
+      jobs_max_concurrent_runs: 1
+
+
