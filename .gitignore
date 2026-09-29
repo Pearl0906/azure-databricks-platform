@@ -10,6 +10,7 @@ crash.*.log
 
 # Terraform variable files may contain secrets
 *.tfvars
+!terraform/environments/dev.tfvars
 *.tfvars.json
 
 # Keep the example configuration
