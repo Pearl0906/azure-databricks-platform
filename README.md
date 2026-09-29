@@ -79,3 +79,54 @@ The main objective is to demonstrate a modern cloud data engineering platform wh
         v                             v
     Raw Data                    Unity Catalog
                                 External Location
+
+## Bronze
+
+The Bronze layer contains raw or minimally processed data.
+
+### Purpose
+
+- Preserve source data
+- Maintain an auditable raw layer
+- Support reprocessing
+- Provide a reliable source for downstream transformations
+
+### Datasets
+
+- Users
+- Products
+- Orders
+- Order Items
+- Events
+- Reviews
+
+---
+
+## Silver
+
+The Silver layer contains cleaned and transformed data.
+
+### Typical Operations
+
+- Removing duplicates
+- Handling invalid records
+- Standardising columns
+- Cleaning data types
+- Validating keys
+- Handling null values
+- Applying business transformations
+
+---
+
+## Gold
+
+The Gold layer contains business-ready datasets.
+
+### The Gold Layer Is Designed For
+
+- Analytics
+- Reporting
+- Dashboards
+- Business intelligence
+- Data products
+- Downstream applications
