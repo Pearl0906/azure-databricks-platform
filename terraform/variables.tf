@@ -73,6 +73,11 @@ variable "storage_credential_comment" {
   default     = ""
 }
 
+variable "azure_client_id" {
+  description = "Azure service principal client ID"
+  type        = string
+  sensitive   = true
+}
 
 variable "azure_client_secret" {
   description = "Azure service principal client secret"
